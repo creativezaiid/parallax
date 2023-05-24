@@ -1,0 +1,48 @@
+body {
+    background: #071a20;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: "Euclid Circular A";
+    color: #1d1d1d;
+}
+
+section {
+    padding: 40px 0;
+}
+
+
+p {
+    opacity: 0.8;
+}
+
+p,
+h2 {
+    z-index: 1;
+    position: relative;
+    margin: 20px 15%;
+}
+
+.text {
+    position: relative;
+}
+
+.image {
+    height: 380px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg");
+}
+
+.text::before {
+    display: block;
+    position: absolute;
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 125%;
+    content: "";
+    rotate: -3deg;
+    translate: -50% -50%;
+}
